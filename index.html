@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crystal</title>
+</head>
+<body>
+	<div id="container-one"> </div>
+	<div id="result"></div>
+	<div id="score"></div>
+	<div id="wins">win</div>
+	<div id="losses">losses</div>
+
+	<button class="clickMe" id="red">red</button>
+    <button class="clickMe" id="blue">blue</button>
+    <button class="clickMe" id="yellow">yellow</button>
+    <button class="clickMe" id="green">green</button>
+
+    <button  id="starter"> Start</button>
+
+<!-- Added link to the jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready (function(){
+ 
+   var ranNum= Math.floor(Math.random()*101+19);
+   $("#container-one").text(ranNum);
+
+ 
+  var redNum= Math.floor(Math.random()*11+1);
+    console.log(redNum);
+
+  var blueNum= Math.floor(Math.random()*11+1);
+  console.log(blueNum);
+
+  var greenNum= Math.floor(Math.random()*11+1);
+  console.log(greenNum);
+
+  var yellowNum= Math.floor(Math.random()*11+1);
+  console.log(yellowNum);
+
+var scoreCounter= 0;
+var winsCounter= 0;
+var lossesCounter= 0;
+
+ console.log(scoreCounter);
+ console.log(redNum);
+$("#score").text(scoreCounter);
+$("#wins").text(winsCounter);
+$("#losses").text(lossesCounter);
+
+$("#red").on("click", function(){
+  scoreCounter= scoreCounter +  redNum;
+  alert(scoreCounter);
+});
+  
+
+
+
+});
+  
+
+
+
+</script>
+</body>
+</html>
