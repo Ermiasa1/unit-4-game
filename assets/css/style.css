@@ -1,0 +1,123 @@
+body{ 
+	background-color:DarkSlateGray;
+
+}
+
+h1{ text-align: center;
+   font-size: 25px;
+}
+#container{
+	width: 1150px;
+    margin: 0 auto;
+}
+#instruction{
+	width: 535px;
+	height: 400Px;
+	background-color: lightblue;
+	float: left;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 05px;
+	padding-bottom: 20px;
+	font-family: calibri;
+	font-size: 18px; 
+	border-style: ridge;
+    border-color: coral;
+    border-width: 7px;
+	color: brown;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+img{ padding-left: 175px;
+	padding-bottom: 10px;
+
+}
+#score-board{
+	width: 500px;
+	height:500px;
+	float: right;
+	background-image: url("asset/image/fish.jpg");
+	margin-top: 20px;
+}
+#ranNumber-container{
+	width: 200px;
+	height: 150px;
+	background-color:  cornsilk;
+	font-size: 20px;
+	text-align: center;
+	float: left;
+	margin-bottom: 52px;
+	border-style: ridge;
+    border-color: coral;
+    border-width: 7px;
+	padding-top: 10px;	
+}
+#container-one{
+    font-size: 30px;
+}
+#win{
+	font-size: 30px;
+}
+#win-lose{
+    width: 250px;
+	height: 150px;
+	background-color:  cornsilk;
+	float: right;
+	padding-right: 10px;
+	border-style: ridge;
+    border-color: coral;
+	border-width: 7px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#wins{
+	font-size: 25px;
+}  
+#losses{
+	font-size: 25px;
+}
+#score-div{
+    width: 300px;
+	height: 200px;
+	clear: both;
+	background-color: cornsilk;
+	font-size: 25px;
+	margin-left: 85px;
+	margin-top: 10px;
+	border-style: ridge;
+    border-color: coral;
+	border-width: 7px;
+	text-align: center;
+	padding-top: 20px;
+}
+#score{
+	text-align: center;
+	font-size: 30px;
+}
+#game-buttons{
+	width: 375px;
+	height: 55px;
+	clear: both;
+	align-items: center;
+}
+#red{
+	width: 85px;
+	height: 55Px;
+	background-color: red;
+}
+#blue{
+	width: 85px;
+	height: 55Px;
+	background-color: blue;
+}
+#green{
+	width: 85px;
+	height: 55Px;
+	background-color: green;
+}
+#yellow{
+	width: 85px;
+	height: 55Px;
+	background-color: yellow;
+}
+

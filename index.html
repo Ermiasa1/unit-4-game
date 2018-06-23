@@ -1,150 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>crystal</title>
+  <title>crystals collector</title>
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-	<div id="container-one"> </div>
-	<div id="result"></div>
-	<div id="score"></div>
-	<div id="wins">win</div>
-	<div id="losses">losses</div>
 
-	<button class="clickMe" id="red">red</button>
-    <button class="clickMe" id="blue">blue</button>
-    <button class="clickMe" id="yellow">yellow</button>
-    <button class="clickMe" id="green">green</button>
+  <div id="container">
+    <section id="instruction">
+      <h1>Crystals Collector</h1>
+      <br>
+	<p>You will be given a random number at the start of the game.</p>
+  <br>
+  <p>There are four crystals below. By  clicking on a crystal you will add a specific amount of points to your total score.</p>
+  <br>
+  <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. </p>
+  <br>
+  <p>The value of each crystal is hidden from you until you click on it.</p>
+  <br>
+  <p>Each time when the game starts, the game will change the values of each crystal</p>
 
-    <button  id="starter"> Start</button>
+	<img src="asset/image/crystal.jpg" alt "crystal" width="100px" height="100px">
+	
+	
+     </section>
+     <section id="score-board">
+       <div id="ranNumber-container"> 
+        <p>Random Number: </p>
+        <br>
+        <span id="container-one"></span>
+       </div>
+       <div id="win-lose">
+        <p>Wins: <span id="wins"></span></p>
+        <br>
+        <p>Losses: <span id="losses"></span></p>  
+       </div>
+       <div id="score-div">
+         <p>Your total score is:  </p>
+         <br>
+         <p> <span id="score"></span> </p>
+       </div>
+     </section>
+     <section id="game-buttons">
+	  <button class="clickMe" id="red"> </button>
+    <button class="clickMe" id="blue"></button>
+    <button class="clickMe" id="yellow"></button>
+    <button class="clickMe" id="green"> </button>
+     </section>
+     </div>
+  
+    
 
 <!-- Added link to the jQuery library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-<script type="text/javascript">
-
-$(document).ready (function(){
- 
-   var ranNum = Math.floor(Math.random()*101+19);
-   $("#container-one").text(ranNum);
-
- 
-  var redNum= Math.floor(Math.random()*11+1);
-    console.log(redNum);
-
-  var blueNum= Math.floor(Math.random()*11+1);
-  console.log(blueNum);
-
-  var greenNum= Math.floor(Math.random()*11+1);
-  console.log(greenNum);
-
-  var yellowNum= Math.floor(Math.random()*11+1);
-  console.log(yellowNum);
-
-var scoreCounter= 0;
-var winsCounter= 0;
-var lossesCounter= 0;
-
- console.log(scoreCounter);
- console.log(redNum);
-$("#score").text(scoreCounter);
-$("#wins").text(winsCounter);
-$("#losses").text(lossesCounter);
-
-function reset(){
-   ranNum= Math.floor(Math.random()*101+19);
-   $("#container-one").text(ranNum);
-
- 
-  var redNum= Math.floor(Math.random()*11+1);
-    console.log(redNum);
-
-  var blueNum= Math.floor(Math.random()*11+1);
-  console.log(blueNum);
-
-  var greenNum= Math.floor(Math.random()*11+1);
-  console.log(greenNum);
-
-  var yellowNum= Math.floor(Math.random()*11+1);
-  console.log(yellowNum);
-  scoreCounter= 0;
-  console.log("scoreCounter");
-  $("#score").text(scoreCounter);
-}
-
-
-$("#red").on("click", function(){
-  scoreCounter= scoreCounter +  redNum;
-  alert(scoreCounter);
-  $("#score").text(scoreCounter);
-  
-  if (scoreCounter==ranNum){
-    alert("you won!");
-    winsCounter++;
-    $("#wins").text(winsCounter);
-    reset();
-  } else if(scoreCounter > ranNum){
-    alert("you lose!");
-    lossesCounter++;
-    $("#losses").text(lossesCounter);
-    reset();
-  }
-});
-  
-$("#blue").on("click", function(){
-  scoreCounter= scoreCounter +  blueNum;
-  alert(scoreCounter);
-  $("#score").text(scoreCounter);
-  
-  if (scoreCounter==ranNum){
-    alert("you won!");
-    winsCounter++;
-    $("#wins").text(winsCounter);
-    reset();
-  } else if(scoreCounter > ranNum){
-    alert("you lose!");
-    lossesCounter++;
-    $("#losses").text(lossesCounter);
-    reset();
-  }
-});
-
-$("#yellow").on("click", function(){
-  scoreCounter= scoreCounter +  yellowNum;
-  alert(scoreCounter);
-  $("#score").text(scoreCounter);
-  
-  if (scoreCounter==ranNum){
-    alert("you won!");
-    winsCounter++;
-    $("#wins").text(winsCounter);
-    reset();
-  } else if(scoreCounter > ranNum){
-    alert("you lose!");
-    lossesCounter++;
-    $("#losses").text(lossesCounter);
-    reset();
-  }
-});
-
-$("#green").on("click", function(){
-  scoreCounter= scoreCounter +  greenNum;
-  alert(scoreCounter);
-  $("#score").text(scoreCounter);
-  
-  if (scoreCounter==ranNum){
-    alert("you won!");
-    winsCounter++;
-    $("#wins").text(winsCounter);
-    reset();
-  } else if(scoreCounter > ranNum){
-    alert("you lose!");
-    lossesCounter++;
-    $("#losses").text(lossesCounter);
-    reset();
-  }
-});
-
-});
-</script>
 </body>
 </html>
