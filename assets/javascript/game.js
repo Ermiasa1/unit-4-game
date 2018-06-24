@@ -5,23 +5,22 @@ $(document).ready (function(){
  
   
    var redNum= Math.floor(Math.random()*11+1);
-     console.log(redNum);
+    
  
    var blueNum= Math.floor(Math.random()*11+1);
-   console.log(blueNum);
+   
  
    var greenNum= Math.floor(Math.random()*11+1);
-   console.log(greenNum);
+  
  
    var yellowNum= Math.floor(Math.random()*11+1);
-   console.log(yellowNum);
+   
  
  var scoreCounter= 0;
  var winsCounter= 0;
  var lossesCounter= 0;
  
-  console.log(scoreCounter);
-  console.log(redNum);
+  
  $("#score").text(scoreCounter);
  $("#wins").text(winsCounter);
  $("#losses").text(lossesCounter);
@@ -32,25 +31,25 @@ $(document).ready (function(){
  
   
    var redNum= Math.floor(Math.random()*11+1);
-     console.log(redNum);
+    
  
    var blueNum= Math.floor(Math.random()*11+1);
-   console.log(blueNum);
+   
  
    var greenNum= Math.floor(Math.random()*11+1);
-   console.log(greenNum);
+   
  
    var yellowNum= Math.floor(Math.random()*11+1);
-   console.log(yellowNum);
+   
    scoreCounter= 0;
-   console.log("scoreCounter");
+   
    $("#score").text(scoreCounter);
  }
  
  
  $("#red").on("click", function(){
    scoreCounter= scoreCounter +  redNum;
-   alert(scoreCounter);
+   
    $("#score").text(scoreCounter);
    
    if (scoreCounter==ranNum){
@@ -68,7 +67,7 @@ $(document).ready (function(){
    
  $("#blue").on("click", function(){
    scoreCounter= scoreCounter +  blueNum;
-   alert(scoreCounter);
+   
    $("#score").text(scoreCounter);
    
    if (scoreCounter==ranNum){
@@ -86,7 +85,7 @@ $(document).ready (function(){
  
  $("#yellow").on("click", function(){
    scoreCounter= scoreCounter +  yellowNum;
-   alert(scoreCounter);
+   
    $("#score").text(scoreCounter);
    
    if (scoreCounter==ranNum){
@@ -104,7 +103,7 @@ $(document).ready (function(){
  
  $("#green").on("click", function(){
    scoreCounter= scoreCounter +  greenNum;
-   alert(scoreCounter);
+   
    $("#score").text(scoreCounter);
    
    if (scoreCounter==ranNum){

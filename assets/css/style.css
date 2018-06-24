@@ -1,9 +1,9 @@
 body{ 
 	background-color:DarkSlateGray;
-
 }
 
-h1{ text-align: center;
+h1{ 
+	text-align: center;
    font-size: 25px;
 }
 #container{
@@ -28,7 +28,8 @@ h1{ text-align: center;
 	border-radius: 25px;
 	margin-top: 20px;
 }
-img{ padding-left: 175px;
+#crystal{ 
+	padding-left: 175px;
 	padding-bottom: 10px;
 
 }
@@ -98,26 +99,21 @@ img{ padding-left: 175px;
 	width: 375px;
 	height: 55px;
 	clear: both;
-	align-items: center;
-}
-#red{
-	width: 85px;
-	height: 55Px;
-	background-color: red;
-}
-#blue{
-	width: 85px;
-	height: 55Px;
-	background-color: blue;
-}
-#green{
-	width: 85px;
-	height: 55Px;
-	background-color: green;
-}
-#yellow{
-	width: 85px;
-	height: 55Px;
-	background-color: yellow;
+   
 }
 
+#red{
+	float: left;
+     padding-right: 02px;
+}
+#blue{
+	float: left;
+	padding-right: 02px;
+}
+#yellow{ 
+	float: left;
+	padding-right: 02px;
+}
+#green{ 
+	padding-right: 02px;
+}
